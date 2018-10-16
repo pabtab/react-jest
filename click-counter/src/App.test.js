@@ -67,7 +67,7 @@ test('clicking button decrements counter display', () => {
   expect(counterDisplay.text()).toContain(counter - 1)
 })
 
-test('should display error message', () => {
+test('should display error message when the counter is less than zero', () => {
   const counter = 0
   const wrapper = setup(null, { counter })
 
@@ -79,4 +79,17 @@ test('should display error message', () => {
   const messageState = wrapper.state('errorMsj')
   expect(messageState).toBe(true)
 
+})
+
+test('should clear error message when counter is zero and increment button is clicked', () => {
+  const counter = 0;
+  const wrapper = setup(null, { counter })
+
+  const buttonIncrement = findByTestAttr(wrapper, "increment-button")
+  buttonIncrement.simulate('click')
+
+  wrapper.update()
+
+  const messageState = wrapper.state('errorMsj')
+  expect(messageState).toBe(false)
 })
