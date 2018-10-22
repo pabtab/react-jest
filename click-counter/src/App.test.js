@@ -18,6 +18,9 @@ const findByTestAttr = (wrapper, val) => {
 test('renders without crashing', () => {
   const wrapper = setup()
   const appComponent = findByTestAttr(wrapper, "component-app")
+  console.log(wrapper)
+  const mela = wrapper.find(`.melapela`)
+  console.log(mela.length)
   expect(appComponent.length).toBe(1)
 });
 

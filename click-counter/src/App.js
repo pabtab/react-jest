@@ -26,6 +26,7 @@ class App extends Component {
     return (
       <div data-test="component-app">
         <h1 data-test="counter-display"> The counter is: {this.state.counter}</h1>
+        <h2 className="melapela">oli</h2>
         <button data-test="decrement-button" onClick={() => this.decrementHandler()}>
           Decrement
         </button>
