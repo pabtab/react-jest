@@ -9,7 +9,7 @@ export default (props) => {
 				</span>
 			</div>
 		:
-		<div data-test="component-congrats">
-		</div>
+			<div data-test="component-congrats">
+			</div>
 	)
 }
