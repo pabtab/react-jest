@@ -1,11 +1,10 @@
 import React from 'react';
-import Enzyme, { shallow } from 'enzyme';
-import EnzymeAdapter from "enzyme-adapter-react-16";
+import { shallow } from 'enzyme';
+
 
 import {findByTestAttr, checkProps} from '../test/testUtils';
 import Congrats from './Congrats';
 
-Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 // Cuidado con tener siempre estas default props tambien en el componente Yo recomiendo mas bien usar default props 
 // desde el componente
