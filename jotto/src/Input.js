@@ -33,9 +33,11 @@ export class Input extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  
-})
+const mapStateToProps = (state) => {
+  return {
+    success: state.success
+  }
+}
 
 const mapDispatchToProps = {
   
