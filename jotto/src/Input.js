@@ -18,7 +18,6 @@ export class Input extends Component {
               data-test="submit-button"
               type="submit"
               className="btn btn-primary mb-2"
-              type="submit"
             >
               Submit
             </button>

@@ -3,6 +3,7 @@
     "check-prop-types": "^1.1.2"
   },
   "dependencies": {
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "redux-thunk": "^2.3.0"
   }
 }
