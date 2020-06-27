@@ -23,13 +23,13 @@ test('should render without error', () => {
 
   expect(component.length).toBe(1)
   
-  describe('getSecretWord calls', () => {
-    test('should getSecretWord gets called on app mount', () => {
-      setup()
+})
 
-      expect(mockGetSecretWord).toHaveBeenCalled();
-    })
-    
+describe('getSecretWord calls', () => {
+  test('should getSecretWord gets called on app mount', () => {
+    setup()
+
+    expect(mockGetSecretWord).toHaveBeenCalled();
   })
   
 })
